@@ -1,0 +1,36 @@
+.login-parent {
+  height: 100vh;
+  font-family: 'Space Grotesk', serif;
+
+  .login-section {
+    .welcome-heading {
+      cursor: default;
+      h1 {
+        font-size: 5vw; /* 7.7% of the viewport width */
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 4vw; /* 6% of the viewport width */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .login-parent {
+    .login-section {
+      .welcome-heading {
+        h2 {
+          font-size: 45px;
+        }
+        h1 {
+          font-size: 55px;
+        }
+      }
+    }
+    .feature-image {
+      display: none !important;
+    }
+  }
+}

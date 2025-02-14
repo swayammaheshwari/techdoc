@@ -1,0 +1,43 @@
+.accordion-main-container {
+  border-top: 1px solid lightgray;
+
+  .accordion-head {
+    width: 100%;
+    border: none;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .accordion-body {
+    border-top: 1px solid lightgray;
+    background-color: rgb(211 211 211 / 20%);
+  }
+
+  .sample-response-title {
+    font-size: 12px;
+  }
+}
+
+.first-response-border-none {
+  border: none;
+}
+
+.__json-pretty__ {
+  background-color: transparent !important;
+  color: black !important;
+  padding-right: 5px;
+  margin: 0px;
+
+  .__json-key__ {
+    color: brown !important;
+  }
+
+  .__json-string__ {
+    color: steelblue !important;
+    white-space: normal;
+    word-break: break-all;
+  }
+}

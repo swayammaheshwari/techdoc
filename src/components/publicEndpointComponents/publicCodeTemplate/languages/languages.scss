@@ -1,0 +1,24 @@
+.language-card {
+  width: 80px;
+  min-width: 50px;
+  border: 1px solid white;
+  background-color: transparent;
+
+  .language-name {
+    font-size: 10px;
+  }
+
+  &:hover {
+    border: 1px solid rgba(128, 128, 128, 0.193);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--language-theme-color);
+    border: none !important;
+  }
+
+  &[is-selected='true'] {
+    border: 1px solid rgba(128, 128, 128, 0.193);
+  }
+}

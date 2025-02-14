@@ -1,0 +1,172 @@
+@import '@/components/main/variables.scss';
+
+.redirections {
+  .back-button-api-redirect {
+    top: 2px;
+    left: 10px;
+  }
+
+  .form {
+    margin-bottom: 20px;
+
+    input {
+      flex: 1;
+
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      background: #e98a36;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: auto;
+    font-size: 12px;
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+      word-break: break-all;
+    }
+
+    th {
+      text-align: center;
+      background: #f4f4f4;
+    }
+
+    td {
+      button {
+        padding: 4px 8px;
+        border: none;
+        border-radius: 4px;
+        background: #ff4d4d;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          background: #cc0000;
+        }
+      }
+
+      &:nth-child(1) {
+        width: 20%;
+      }
+
+      &:nth-child(2) {
+        width: 72%;
+      }
+
+      &:nth-child(3) {
+        width: 8%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .main-container {
+      .form {
+        flex-direction: column;
+        gap: 20px;
+
+        .form-inputs {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  .redirections-table-container {
+    height: calc(100% - 200px);
+  }
+}
+
+.sidebar-content {
+  .card-body {
+    padding: 0;
+  }
+
+  .collection-name {
+    line-height: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-container {
+  width: 70%;
+}
+
+.sidebar-pages-container {
+  width: 320px;
+  border-right: 1px solid rgba(128, 128, 128, 0.366);
+  overflow-y: auto;
+}
+
+.redirection-table-container {
+  flex-grow: 1;
+  height: 95vh;
+}
+
+.domain-name {
+  color: green;
+}
+
+.url-redirection {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.page-heading-container {
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 100%;
+
+  &:hover {
+    background-color: var(--background-color-light-grey);
+
+    .page-heading {
+      color: black !important;
+    }
+  }
+
+  svg {
+    &:hover {
+      color: black !important;
+    }
+  }
+
+  .page-heading {
+    font-size: 12px;
+  }
+}
+
+.version-heading {
+  font-size: 10px;
+}
+
+.url-path {
+  color: rgb(30, 117, 186);
+
+  :hover {
+    text-decoration: underline;
+  }
+}
+
+.additional-info {
+  font-size: 12px;
+}

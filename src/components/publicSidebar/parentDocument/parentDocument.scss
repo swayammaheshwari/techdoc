@@ -1,0 +1,84 @@
+@import '../../../components/main/variables.scss';
+
+.show-doc-bold {
+  font-weight: 500;
+  color: #017fdc;
+  background-color: rgba(1, 142, 245, 0.09);
+}
+
+.show-version-dropdown {
+  display: none;
+
+  .version-dropdown-selected-name {
+    font-size: 12px;
+    color: #00000099;
+  }
+
+  .dropdown {
+    color: black;
+  }
+}
+
+.parent-doc-container {
+  border-radius: 4px;
+
+  > div {
+    height: fit-content;
+  }
+
+  &:hover {
+    color: var(--text-color-black) !important;
+    font-weight: 500;
+    background-color: var(--background-color-neutral-gray);
+
+    .show-version-dropdown {
+      display: block;
+    }
+
+    .public-arrow-icon {
+      &:hover {
+        background-color: var(--background-color-light-grey);
+      }
+    }
+  }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.parent-doc-container {
+  .arrow-right-icon {
+    display: none;
+  }
+
+  .arrown-down-icon {
+    display: none;
+  }
+
+  .parent-page-emoji-icon,
+  .parent-page-icon,
+  .arrow-right-icon,
+  .arrown-down-icon {
+    width: 28px;
+    height: 26px;
+  }
+
+  &:hover {
+    .parent-page-emoji-icon {
+      display: none;
+    }
+
+    .arrow-right-icon {
+      display: block !important;
+    }
+
+    .arrown-down-icon {
+      display: block !important;
+    }
+
+    .parent-page-icon {
+      display: none;
+    }
+  }
+}

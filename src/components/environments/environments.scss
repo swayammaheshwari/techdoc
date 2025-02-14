@@ -1,0 +1,104 @@
+//Note: Unique IDs are used in CTAs for tracking purposes with GTM. Do not use the same IDs elsewhere.
+.environment-dropdown-menu-right {
+  width: 300px;
+}
+
+.custom-environment-list-container {
+  height: 300px;
+
+  .manage-env-delete-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.custom-table-container {
+  max-height: 30vh !important;
+
+  th {
+    background-color: #f3f3f3;
+  }
+
+  .env-delete-icon {
+    > :first-child {
+      &:hover {
+        background-color: var(--background-color-light-grey) !important;
+      }
+    }
+  }
+}
+
+.add-custom-environment {
+  > :first-child {
+    max-width: 800px !important;
+  }
+}
+
+.environment-container {
+  .environment-buttons {
+    height: 40px;
+    width: 40px;
+  }
+
+  .select-environment-dropdown {
+    height: 42px;
+
+    .dropdown {
+      .btn {
+        height: 28px;
+
+        &::after {
+          content: '';
+          all: unset !important;
+        }
+
+        span {
+          max-width: 100px;
+        }
+      }
+    }
+
+    .dropdown-item-icons {
+      .export-icon,
+      .global-icon,
+      .check-icon {
+        width: 18px;
+        height: 18px;
+        color: var(--text-color-grey);
+      }
+
+      &:hover {
+        .export-icon {
+          display: block !important;
+        }
+
+        .global-icon {
+          display: none;
+        }
+
+        .check-icon {
+          display: none !important;
+        }
+      }
+
+      svg {
+        margin: 0 !important;
+      }
+    }
+
+    .envitonment-list {
+      max-height: calc(100vh - 220px);
+    }
+  }
+}
+
+.delete-environment-modal {
+  > :first-child {
+    max-width: 22vw;
+
+    > :first-child {
+      box-shadow: 0 0 10px 5px rgb(235 230 230 / 50%);
+      max-width: 100%;
+    }
+  }
+}

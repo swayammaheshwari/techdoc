@@ -1,0 +1,50 @@
+body {
+  &:has(.icon-emoji-picker-modal) {
+    .modal-backdrop {
+      display: none;
+    }
+  }
+}
+
+.icon-emoji-picker-modal {
+  .modal-dialog {
+    position: relative;
+    top: var(--y-axis, 30%);
+    left: var(--x-axis, 20%);
+    margin: 10px !important;
+    width: clamp(350px, 28vw, 400px);
+    height: clamp(300px, 100%, 500px) !important;
+    transform: translate(-50%, 20px) !important;
+
+    @media screen and (max-width: 992px) {
+      transform: translate(-20px, 20px) !important;
+    }
+
+    .modal-content {
+      box-shadow:
+        rgba(15, 15, 15, 0.05) 0px 0px 0px 1px,
+        rgba(15, 15, 15, 0.1) 0px 3px 6px,
+        rgba(15, 15, 15, 0.2) 0px 9px 24px;
+      background-color: var(--background-color-white);
+      height: 100%;
+
+      .modal-body {
+        overflow: hidden;
+
+        .emoji-picker-component {
+          > *:nth-child(2) {
+            scrollbar-width: thin;
+          }
+        }
+      }
+
+      .modal-header {
+        .emoji-picker-remove-button {
+          &:hover {
+            background-color: var(--background-color-light-grey) !important;
+          }
+        }
+      }
+    }
+  }
+}

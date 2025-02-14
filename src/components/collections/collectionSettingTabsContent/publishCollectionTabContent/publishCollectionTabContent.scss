@@ -1,0 +1,27 @@
+.public-link-container {
+  width: fit-content;
+  border-radius: 4px 0px 0px 4px;
+
+  .public-link {
+    color: black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.copy-icon-continer {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.important-notes-container {
+  margin-top: 50px;
+}
+
+.related-tabs-link {
+  text-decoration: underline;
+
+  &:hover {
+    color: black !important;
+  }
+}

@@ -1,0 +1,32 @@
+.public-table-container {
+  border: 1px solid rgba(0, 0, 0, 0.122);
+
+  .public-table-col {
+    vertical-align: top;
+
+    .key-autosuggest-container {
+      min-width: 95%;
+
+      .description-text {
+        font-size: 10px;
+        color: gray;
+      }
+
+      .main__div {
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .public-table-col-checkbox {
+    vertical-align: top;
+  }
+
+  .checkbox-none {
+    opacity: 0;
+  }
+
+  .show-optional-btn {
+    font-size: 12px;
+  }
+}

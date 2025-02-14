@@ -1,0 +1,41 @@
+.feedback-tab {
+  .feedback-table-container {
+    .table {
+      thead {
+        tr {
+          th {
+            border: 1px solid var(--border-color-light-grey) !important;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            border: 1px solid var(--border-color-light-grey) !important;
+
+            .feedback-model-body {
+              .modal-dialog {
+                .modal-content {
+                  height: 40vh !important;
+
+                  .modal-body {
+                    height: 100%;
+                    overflow: auto !important;
+                    scrollbar-width: thin !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pages-endpoint-feedback {
+  &:hover {
+    color: #0062cc !important;
+  }
+}

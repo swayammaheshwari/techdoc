@@ -1,0 +1,22 @@
+.request-type-container {
+  border: 1px;
+  border-color: rgba(128, 128, 128, 0.507);
+  border-style: solid;
+  border-radius: 4px 0px 0px 4px;
+  font-size: 12px;
+}
+
+.send-btn {
+  min-width: 77px;
+  width: 77px;
+  max-width: 77px;
+}
+
+.cancel-btn {
+  min-width: 77px;
+  width: 77px;
+  max-width: 77px;
+  background-color: rgba(128, 128, 128, 0.433);
+  color: black;
+  font-weight: 300 !important;
+}

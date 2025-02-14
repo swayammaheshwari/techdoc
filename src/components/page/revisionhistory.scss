@@ -1,0 +1,36 @@
+.revision-history-content-modal {
+  .modal-dialog {
+    min-width: 70vw !important;
+    min-height: 70vh !important;
+    max-height: 70vh !important;
+    margin-top: 120px !important;
+
+    .modal-content {
+      height: 100%;
+
+      .revision-history-body {
+        .revision-aside-pane {
+          min-width: 260px;
+          width: 300px;
+        }
+
+        .revision-history-content-heading {
+          &:hover {
+            background-color: var(--background-color-light-grey);
+
+            > :first-child {
+              color: var(--text-color-black) !important;
+            }
+          }
+        }
+      }
+
+      .revision-histoy-footer {
+        .confirm-button,
+        .restore-button {
+          background-color: var(--background-color-primary);
+        }
+      }
+    }
+  }
+}

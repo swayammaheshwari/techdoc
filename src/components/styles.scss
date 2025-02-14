@@ -1,0 +1,716 @@
+//Note: Unique IDs are used in CTAs for tracking purposes with GTM. Do not use the same IDs elsewhere.
+@import './main/variables.scss';
+
+$border-color: rgba(227, 228, 230, 0.7);
+
+.body {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.body-span {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.navbar-nav {
+  float: left;
+}
+
+.nav-tabs {
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: black;
+  border: none;
+  background-color: inherit;
+}
+
+#codes {
+  border-color: black;
+  border-style: solid;
+  border-width: 0px 1px 0px 0px;
+}
+
+#parent-accordion {
+  .card {
+    border-radius: 0;
+    border: none;
+
+    .collapse {
+      .card-body {
+        padding: 0 0 0 15px !important;
+      }
+    }
+
+    .card-header {
+      border-bottom: 1px solid $border-color;
+      margin-bottom: 0px !important;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0px;
+      height: 60px;
+      border-radius: 0px;
+      background-color: white;
+
+      .btn {
+        text-align: left;
+      }
+
+      button.btn {
+        float: left;
+        width: 80%;
+      }
+
+      .btn-group {
+        visibility: hidden;
+        display: flex;
+        margin: 0px;
+        height: 100%;
+        border-radius: 0px;
+
+        button.btn.btn-secondary {
+          border-radius: 0px;
+          background: rgb(237, 237, 237);
+          border: 0px;
+          border-left: 1px solid rgba(0, 0, 0, 0.125);
+          color: rgba(0, 0, 0, 0.4);
+        }
+
+        .dropdown-menu {
+          border-radius: 0px;
+          transform: translate3d(-119px, 59px, 0px) !important;
+          margin: 0px;
+        }
+      }
+
+      .show {
+        visibility: visible;
+      }
+    }
+
+    .card-header:hover {
+      background: rgb(237, 237, 237);
+
+      .btn-group {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+#child-accordion > .card {
+  border-radius: 0px;
+  border: none;
+
+  .collapse {
+    .card-body {
+      padding: 0 0 0 15px !important;
+    }
+  }
+
+  .card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    height: 40px;
+    border-radius: 0px;
+    border: none;
+
+    h5.mb-0 {
+      float: left;
+      width: 100%;
+    }
+
+    .btn-group {
+      visibility: hidden;
+      display: flex;
+      margin: 0px;
+      height: 100%;
+      border-radius: 0px;
+
+      button.btn.btn-secondary {
+        border-radius: 0px;
+        background: rgb(237, 237, 237);
+        border: 0px;
+        border-left: 1px solid rgba(0, 0, 0, 0.125);
+        color: rgba(0, 0, 0, 0.4);
+      }
+
+      .dropdown-menu {
+        border-radius: 0px;
+        transform: translate3d(-119px, 40px, 0px) !important;
+        margin: 0px;
+      }
+    }
+
+    .show {
+      visibility: visible;
+    }
+  }
+
+  .card-header:hover {
+    background: rgb(237, 237, 237);
+
+    .btn-group {
+      visibility: visible;
+    }
+  }
+}
+
+.endpoint-list-item {
+  display: flex;
+  flex-direction: row;
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .btn-group {
+    visibility: hidden;
+    color: rgba(0, 0, 0, 0.4);
+
+    .btn {
+      i.fas.fa-ellipsis-h {
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+.POST {
+  margin-right: 15px;
+  font-size: 13px;
+  font-weight: 800;
+  opacity: 0.7;
+  width: 60px;
+}
+
+.GET {
+  margin-right: 15px;
+  font-size: 13px;
+  font-weight: 800;
+  opacity: 0.7;
+  width: 60px;
+}
+
+.PUT {
+  margin-right: 15px;
+  font-size: 13px;
+  font-weight: 800;
+  opacity: 0.7;
+  width: 60px;
+}
+
+.PATCH {
+  margin-right: 15px;
+  font-size: 13px;
+  font-weight: 800;
+  opacity: 0.7;
+  width: 60px;
+}
+
+.DELETE {
+  margin-right: 15px;
+  font-size: 13px;
+  font-weight: 800;
+  opacity: 0.7;
+  width: 60px;
+}
+
+.api-label {
+  width: 40px;
+  height: 17px;
+  font-size: 9px;
+  line-height: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 0;
+  border-radius: 4px;
+  opacity: 1;
+  display: inline-block;
+  border: 1px solid $lightblackborder !important;
+
+  &.api-label-lg {
+    font-size: 12px;
+    width: 64px;
+    height: 26px;
+    line-height: 26px;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: 568px) {
+      font-size: 16px;
+    }
+  }
+
+  &.POST {
+    background-color: $post-background-color;
+    color: #27ae60;
+  }
+
+  &.GET {
+    background-color: $get-background-color;
+    color: #e98a36;
+  }
+
+  &.PUT {
+    background-color: $put-background-color;
+    color: #cca027;
+  }
+
+  &.PATCH {
+    background-color: $patch-background-color;
+    color: #ce6529;
+  }
+
+  &.DELETE {
+    background-color: $delete-background-color;
+    color: #d13755;
+  }
+
+  &.input-group-text {
+    border-radius: 4px 0 0 4px;
+  }
+}
+
+label.custom-input-label {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+input.custom-input::placeholder {
+  font-size: 15px;
+}
+
+textarea.custom-input::placeholder {
+  font-size: 15px;
+}
+
+button.btn.btn-default {
+  box-shadow: none !important;
+}
+
+button.btn {
+  box-shadow: none !important;
+}
+
+.custom-editor-public-page {
+  border: 1px solid $lightblackborder;
+  border-radius: 4px;
+
+  .custom-raw-editor-public {
+    width: 100% !important;
+
+    &.ace-github {
+      background: unset;
+    }
+  }
+}
+
+.custom-raw-editor-public {
+  width: 100% !important;
+  border-radius: 4px;
+
+  .ace_gutter {
+    background: unset !important;
+    border-right: 1px solid rgba(128, 128, 128, 0.163);
+  }
+
+  .ace_scroller {
+    background: unset !important;
+  }
+}
+
+.prettify-button {
+  font-size: var(--text-size-m);
+  font-weight: 500;
+  background-color: transparent;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  right: 0px;
+  z-index: 1;
+  bottom: 4px;
+  font-size: 10px;
+
+  span {
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.custom-raw-editor {
+  width: 100% !important;
+  height: 250px !important;
+  border-radius: 4px;
+  border-radius: $border-radius;
+  border: 1px solid $lightblackborder;
+}
+
+.custom-radio-input {
+  margin-right: 5px;
+}
+
+button.btn.custom-body-type-button {
+  display: flex;
+}
+
+.custom-td {
+  padding: 0px !important;
+  opacity: 0.8;
+  position: relative;
+}
+
+.public-endpoint-sidebar {
+  .primary-sidebar {
+    width: 100%;
+  }
+  .enableSearch .search-box > input[type='text'] {
+    padding: 0 1rem;
+    background-image: none !important;
+  }
+
+  .search-box > input[type='text'] {
+    padding-left: 2.5rem;
+    background: url('../../public/assets/icons/search.svg') no-repeat 0.75rem center !important;
+  }
+
+  .versionsAvailable.versionWrapper:not(.enableSearch) .search-box > input[type='text'] {
+    background: url('../../public/assets/icons/search.svg') no-repeat center !important;
+    padding: 0 1rem;
+    cursor: pointer;
+
+    &::placeholder {
+      font-size: 0;
+    }
+  }
+
+  .linkWith {
+    .hm-sidebar-block {
+      margin-top: 30px;
+    }
+  }
+}
+
+.hitman-logo {
+  height: 45px;
+}
+
+.custom-body-description {
+  display: flex;
+  flex-direction: row-reverse;
+  transform: translateY(-34px);
+  position: relative;
+  float: right;
+  height: 0px;
+  will-change: transform;
+  color: rgb(255, 99, 71) !important;
+  background: rgb(241, 241, 241) !important;
+  border: none !important;
+}
+
+.api-label.lg-label {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  box-shadow: -25px 25px 43px rgba(0, 0, 0, 0.07);
+}
+
+.input-field-wrapper {
+  input.token-generator-input-field {
+    height: 36px;
+    border: 1px solid #e0e0e0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    border-radius: 4px;
+    padding: 0 10px;
+
+    &:focus {
+      outline: none;
+      border-color: $text-color;
+    }
+  }
+
+  label {
+    color: #4f4f4f;
+    font-size: $font-medium !important;
+    margin: 0;
+    font-weight: 400 !important;
+  }
+
+  .dropdown {
+    button.dropdown-toggle {
+      background: #fff !important;
+      flex: 1.6 1;
+      height: 36px;
+      border: 1px solid #e0e0e0;
+      font-size: $font-medium;
+      font-weight: 400;
+      color: #000;
+      border-radius: 4px;
+      justify-content: space-between;
+    }
+
+    .dropdown-menu {
+      width: 100%;
+    }
+  }
+}
+
+.dropdown {
+  &.cst {
+    button {
+      border: 1px solid $border-color;
+      color: #000;
+      width: 100%;
+      justify-content: space-between;
+      max-width: 12rem;
+      text-overflow: ellipsis;
+
+      &:after {
+        transition: all 0.3s ease-in;
+      }
+    }
+
+    .dropdown-menu {
+      max-height: 15rem;
+      overflow: auto;
+      transform: translate(0rem, 2.45rem) !important;
+    }
+  }
+}
+
+.back-btn {
+  margin-left: -1rem;
+  margin-right: auto;
+  border-left: 1px solid #1f1f1f;
+  border-right: 1px solid #1f1f1f;
+}
+
+.heading3 {
+  font-size: 15px;
+}
+
+button.is_active {
+  background: rgb(197, 197, 197);
+  padding: 1px 1px;
+  border-radius: 2px;
+}
+
+.ProseMirror {
+  mark {
+    background-color: greenyellow;
+  }
+
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+
+    td,
+    th {
+      min-width: 1em;
+      border: 2px solid #ced4da;
+      padding: 3px 5px;
+      vertical-align: top;
+      box-sizing: border-box;
+      position: relative;
+
+      > * {
+        margin-bottom: 0;
+      }
+    }
+
+    th {
+      font-weight: bold;
+      text-align: left;
+      background-color: #f1f3f5;
+    }
+
+    .column-resize-handle {
+      position: absolute;
+      right: -2px;
+      top: 0;
+      bottom: -2px;
+      width: 4px;
+      background-color: #adf;
+      pointer-events: none;
+    }
+  }
+}
+
+.resize-cursor {
+  cursor: ew-resize;
+  cursor: col-resize;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #635e5e;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.tippy-box.hidden {
+  display: none !important;
+}
+
+.textEditorContainer {
+  .ProseMirror {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .tippy-box {
+    max-width: 100% !important;
+    background-color: #fff;
+    border: 1px solid $outline-color;
+    border-bottom: 0;
+  }
+
+  &.editor {
+    background-color: #fff;
+    border-radius: $border-radius;
+    display: block !important;
+
+    .ProseMirror {
+      padding: 0.5rem;
+
+      &.ProseMirror-focused {
+        outline: none;
+      }
+    }
+  }
+
+  .minHeight {
+    min-height: 25rem;
+  }
+}
+
+.basic.tree {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.basic .tree-node,
+.basic .tree-node-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.basic .tree-branch-wrapper,
+.basic .tree-node__leaf {
+  outline: none;
+}
+
+.basic .tree-node--focused {
+  outline-color: rgb(77, 144, 254);
+  outline-style: auto;
+  outline-width: 2px;
+  display: block;
+}
+
+.basic .tree-node__branch {
+  display: block;
+}
+
+.basic .tree-node {
+  cursor: pointer;
+}
+
+.POST-TAB {
+  color: green;
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.7;
+  display: inline-block;
+}
+
+.GET-TAB {
+  color: rgb(255, 123, 0);
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.7;
+  display: inline-block;
+}
+
+.PUT-TAB {
+  color: #cca027;
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.7;
+  display: inline-block;
+}
+
+.PATCH-TAB {
+  color: #ce6529;
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.7;
+  display: inline-block;
+}
+
+.DELETE-TAB {
+  color: #d13755;
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.7;
+  display: inline-block;
+}
+
+.floating-menu {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  .biplus-icon {
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    transform: translateY(-50%);
+  }
+}
+
+.bubble-menu {
+  display: flex;
+  background-color: #fff;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+
+  button {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+}

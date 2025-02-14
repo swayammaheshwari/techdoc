@@ -1,0 +1,21 @@
+.manage-member-team-page {
+  @media screen and (width <=425px) {
+    padding: 10px !important;
+  }
+
+  .dashboard-back-button {
+    &:hover {
+      background-color: var(--background-color-light-grey) !important;
+    }
+  }
+
+  .manage-team-table {
+    border: 1px solid var(--border-color-light-grey) !important;
+
+    th,
+    td {
+      border: 1px solid var(--border-color-light-grey) !important;
+      padding: 10px;
+    }
+  }
+}

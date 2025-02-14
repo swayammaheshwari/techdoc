@@ -1,0 +1,15 @@
+.header-footer-container {
+  height: 100%;
+  overflow: scroll;
+}
+
+.header-footer-main-container {
+  width: 50%;
+}
+
+.preview-main-container {
+  width: 50%;
+  position: sticky;
+  top: 87px;
+  height: calc(100vh - 230px);
+}

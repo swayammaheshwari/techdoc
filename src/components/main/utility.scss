@@ -1,0 +1,206 @@
+/** Note:- Use Bootstrap Classes and utility */
+body {
+  &:has(.no-modal-backdrop) {
+    .modal-backdrop {
+      display: none;
+    }
+  }
+}
+
+.published {
+  color: $success-color;
+}
+
+.clear-both {
+  clear: both;
+}
+
+/** Theme Color */
+
+.theme-color {
+  color: $theme-color;
+}
+
+/** Font Color Classes */
+
+.text-black {
+  color: $text-color;
+}
+
+.text-grey {
+  color: $theme-color !important;
+}
+
+/** Font Size Classes */
+
+.font-20 {
+  font-size: $font-extra-large !important;
+}
+
+.font-18 {
+  font-size: $font-large-l !important;
+}
+
+.font-16 {
+  font-size: $font-medium-m !important;
+}
+
+.font-14 {
+  font-size: $font-normal-n !important;
+}
+
+.font-12 {
+  font-size: $font-small-s !important;
+}
+
+.font-10 {
+  font-size: $font-extra-small !important;
+}
+
+/** Gap Classes */
+
+.gap-1 {
+  gap: $gap-small !important;
+}
+
+.gap-2 {
+  gap: $gap-medium !important;
+}
+
+.gap-3 {
+  gap: $gap-normal !important;
+}
+
+.gap-4 {
+  gap: $gap-small-large !important;
+}
+
+.gap-5 {
+  gap: $gap-large !important;
+}
+
+.gap-6 {
+  gap: $gap-extra-large !important;
+}
+
+/** Font Weight Classes */
+
+.fw-400 {
+  font-weight: $font-weight-400 !important;
+}
+
+.fw-500 {
+  font-weight: $font-weight-500 !important;
+}
+
+.fw-600 {
+  font-weight: $font-weight-600 !important;
+}
+
+.fw-700 {
+  font-weight: $font-weight-700 !important;
+}
+
+.fw-800 {
+  font-weight: $font-weight-800 !important;
+}
+
+.fw-900 {
+  font-weight: $font-weight-900 !important;
+}
+
+/** Position Top Right Bottom Left Classes */
+
+.top-0 {
+  top: 0 !important;
+}
+
+.left-0 {
+  left: 0 !important;
+}
+
+.right-0 {
+  right: 0 !important;
+}
+
+.bottom-0 {
+  bottom: 0 !important;
+}
+
+/** Width Height CLasses */
+
+.w-100vw {
+  width: 100vw;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.min-h-100vh {
+  min-height: 100vh;
+}
+
+/** Background Color Classes */
+
+.bg-none {
+  background: none !important;
+}
+
+.bg-light-grey {
+  background-color: var(--background-color-light-grey) !important;
+}
+
+.bg-inherit {
+  background-color: inherit !important;
+}
+
+.bg-color-primary {
+  background-color: var(--background-color-primary) !important;
+}
+
+.bg-color-secondary {
+  background-color: var(--background-color-secondary) !important;
+}
+
+/** Overflow Classes */
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.overflow-y-auto {
+  overflow-y: auto !important;
+}
+
+.overflow-x-auto {
+  overflow-x: auto !important;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden !important;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden !important;
+}
+
+.scrollbar-width-thin {
+  scrollbar-width: thin !important;
+}
+
+.scrollbar-width-none {
+  scrollbar-width: none !important;
+}
+
+.scrollbar-behavior-smooth {
+  scroll-behavior: smooth !important;
+}
+
+/** Text Decoration*/
+.outline-none {
+  outline: none !important;
+}
+
+.transition-none {
+  transition: none !important;
+}

@@ -1,0 +1,71 @@
+@import '../../../components/main/variables.scss';
+
+.show-subdoc-bold {
+  font-weight: 500;
+  color: #017fdc;
+  background-color: rgba(1, 142, 245, 0.09);
+}
+
+.sub-doc-container {
+  border-radius: 4px;
+
+  > div {
+    height: fit-content;
+  }
+
+  &:hover {
+    color: var(--text-color-black) !important;
+    font-weight: 500;
+    background-color: var(--background-color-neutral-gray);
+
+    .show-version-dropdown {
+      display: block;
+    }
+
+    .public-arrow-icon {
+      &:hover {
+        background-color: var(--background-color-light-grey) !important;
+      }
+    }
+  }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.sub-doc-container {
+  .arrow-right-icon {
+    display: none;
+  }
+
+  .arrown-down-icon {
+    display: none;
+  }
+
+  .sub-page-emoji-icon,
+  .sub-page-icon,
+  .arrow-right-icon,
+  .arrown-down-icon {
+    width: 28px;
+    height: 26px;
+  }
+
+  &:hover {
+    .sub-page-emoji-icon {
+      display: none;
+    }
+
+    .arrow-right-icon {
+      display: block !important;
+    }
+
+    .arrown-down-icon {
+      display: block !important;
+    }
+
+    .sub-page-icon {
+      display: none;
+    }
+  }
+}
